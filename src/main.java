@@ -26,6 +26,5 @@ public class main {
        for(int j=1;j<=cusSize;j++) { //開始執行Thread
            c[j-1].start();
        }
-       new Customer(shop,15000).start();
     }
 }

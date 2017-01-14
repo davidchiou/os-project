@@ -10,7 +10,7 @@ public class Customer extends Thread {
 
     public void run(){
         try {
-            sleep(100);
+            sleep(startTime);
         } catch(InterruptedException e){}
         shop._enterMutex.lock();
         shop.setEnterCounting(shop.getEnterCounting()+1);
